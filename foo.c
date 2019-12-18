@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int foo(int x, int y)
+extern int multi2(int val);
+
+int addxy(int x, int y)
 {
-    return x + y;
+    return multi2(x + y);
 }
